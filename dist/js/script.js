@@ -1,7 +1,5 @@
 "use strict";
 
-const { WebpackOptionsValidationError } = require("webpack");
-
 window.addEventListener('DOMContentLoaded',() => {
     // tabs
     const tabs = document.querySelectorAll('.tabheader__item'),
@@ -27,7 +25,6 @@ window.addEventListener('DOMContentLoaded',() => {
         tabs[i].classList.add('tabheader__item_active');
     }
 
-
     hideTabContent();
     showTabContent();
 
@@ -46,7 +43,7 @@ window.addEventListener('DOMContentLoaded',() => {
     
     // Timer
 
-    const deadline = '2022-04-15';
+    const deadline = '2022-05-20';
 
     function getTimeRemaining(endtime) {
         const t = Date.parse(endtime) - Date.parse(new Date()), // difference between timestamp and deadline
@@ -98,7 +95,6 @@ window.addEventListener('DOMContentLoaded',() => {
     }
 
     setClock('.timer', deadline);
-
 
     // Modal window
 
