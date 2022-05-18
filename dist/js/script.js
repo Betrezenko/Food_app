@@ -227,7 +227,7 @@ window.addEventListener('DOMContentLoaded',() => {
         loading: 'img/form/spinner.svg',
         success: 'Success',
         failure: 'Failed'
-    }
+    };
 
     forms.forEach(item => {
         postData(item);
